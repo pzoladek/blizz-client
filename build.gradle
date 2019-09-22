@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.pzold'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = 11
 
 repositories {
 	mavenCentral()
@@ -19,7 +19,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 	//implementation 'org.postgresql:postgresql:42.2.6'
+	implementation 'org.projectlombok:lombok:1.18.8'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.integration:spring-integration-test'
+	
+	annotationProcessor 'org.projectlombok:lombok:1.18.8'
 }
