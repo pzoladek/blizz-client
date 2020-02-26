@@ -15,14 +15,13 @@ repositories {
 dependencies {
 	//uncomment lines when they'll be ready
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-integration'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	compile group: 'org.springframework:spring-messaging:5.1.9.RELEASE'
 	//implementation 'org.postgresql:postgresql:42.2.6'
 	implementation 'org.projectlombok:lombok:1.18.8'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.integration:spring-integration-test'
 	
 	annotationProcessor 'org.projectlombok:lombok:1.18.8'
 }
